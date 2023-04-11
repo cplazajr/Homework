@@ -10,7 +10,7 @@ function greetCustomer() {
   for (let pizzaTopping of pizzaToppings) {
     toppings += pizzaTopping + " ";
   }
-  return greet + toppings;
+  console.log(greet + toppings);
 }
 
 //Create a getPizzaOrder function
@@ -45,13 +45,15 @@ function preparePizza(order) {
 //outputs the same pizza Object that was passed in
 
 function servePizza(pizzaOrder) {
-  let served = `Order up! Here is your ${pizzaOrder.size} ${pizzaOrder.crust} crust pizza with ${pizzaOrder.toppings},Enjoy!`;
-  return served;
+  console.log(
+    `Order up! Here is your ${pizzaOrder.size} ${pizzaOrder.crust} crust pizza with ${pizzaOrder.toppings},Enjoy!`
+  );
+  return pizzaOrder;
 }
 
 //Call each function and (starting with preparePizza) use the returned value from the previous function as its input
 
-console.log(greetCustomer());
-getPizzaOrder("large", "thin", ["pepperoni", "sausage", "onions", "tomatoes"]);
-preparePizza(order);
-console.log(servePizza(pizza));
+greetCustomer();
+getPizzaOrder([]);
+preparePizza([]);
+servePizza(order);
