@@ -54,6 +54,13 @@ function servePizza(pizzaOrder) {
 //Call each function and (starting with preparePizza) use the returned value from the previous function as its input
 
 greetCustomer();
-getPizzaOrder([]);
-preparePizza([]);
-servePizza(order);
+servePizza(
+  preparePizza(
+    getPizzaOrder("large", "thin", [
+      `pepperoni`,
+      `sausage`,
+      `onions`,
+      `tomatoes`
+    ])
+  )
+);
