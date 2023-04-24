@@ -1,0 +1,67 @@
+html {
+  background-color: white;
+}
+
+
+
+body {
+  text-align: center;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 50px;
+text-decoration:underline;
+}
+
+h2{
+  text-decoration: underline;
+}
+
+p{
+  padding: 10px 25px;
+}
+
+img {
+  height: 100%;
+  padding: 20px;
+}
+
+div {
+  border: 5px solid black;
+  margin: 10px;
+}
+
+#introPic {
+  float: right;
+padding-top: 45px;
+}
+
+#proCarrer{
+padding-left: 25px;
+}
+
+#bio {
+  text-align: center;
+}
+#bio > li {
+ text-align: left;
+}
+
+#achievements > li {
+text-align: left;
+}
+
+#pro {
+  width: auto;
+}
+
+
+@media (max-width:375px) {
+  img{
+    width:100%;
+    height: auto;
+  }
+}
+
+
